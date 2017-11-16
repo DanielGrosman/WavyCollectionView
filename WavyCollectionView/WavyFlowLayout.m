@@ -12,7 +12,7 @@
 
 -(void)prepareLayout {
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
- self.itemSize = CGSizeMake(100, 50);
+    self.itemSize = CGSizeMake(100, 50);
  //Set minimum interitem spacing to be huge to force all items to be on their own line
     self.minimumInteritemSpacing = CGFLOAT_MAX;
 }
@@ -31,7 +31,6 @@
         CGSize newSize = CGSizeMake(100, randomYValue*0.5);
         attribute.size = newSize;
         attribute.center = newPoint;
-        self.minimumInteritemSpacing = CGFLOAT_MAX;
         
     
         [newAttrs addObject:attribute];
